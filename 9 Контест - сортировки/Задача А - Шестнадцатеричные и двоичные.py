@@ -4,6 +4,6 @@
 # Побитовый XOR этих чисел в шестнадцетиричном виде
 # Ввод: 1 23 Вывод: 22
 # Ввод: f0 0f Вывод: ff
-a,b = list(map(lambda x:int(x,16), input().split()))
+a, b = list(map(lambda x: int(x, 16), input().split()))
 
-print(hex(a^b)[2:])
+print(hex(a ^ b)[2:])
