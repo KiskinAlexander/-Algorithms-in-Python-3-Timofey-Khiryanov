@@ -1,17 +1,10 @@
-# Задание по пути: http://judge.mipt.ru/mipt_cs_on_python3/labs/lab1.html
-# Нарисуйте звезды:
-# http://judge.mipt.ru/mipt_cs_on_python3/images/lab1/star11.gif
 import turtle
 t = turtle.Turtle()
 t.shape('turtle')
 n = int(turtle.textinput(u'Введите количество вершин', 'Введите количество вершин: '))
-
-
 def stars(n):
     t.left(180 - (180 / n))
     t.forward(200)
-
-
 x = 1
 while x <= n:
     stars(n)

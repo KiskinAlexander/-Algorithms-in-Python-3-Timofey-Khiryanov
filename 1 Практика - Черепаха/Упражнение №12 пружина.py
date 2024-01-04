@@ -1,6 +1,3 @@
-# Задание по пути: http://judge.mipt.ru/mipt_cs_on_python3/labs/lab1.html
-# Нарисуйте пружину. Используйте функцию, рисующую дугу.:
-# http://judge.mipt.ru/mipt_cs_on_python3/images/lab1/spring.gif
 import turtle
 t = turtle.Pen()
 t.shape('turtle')

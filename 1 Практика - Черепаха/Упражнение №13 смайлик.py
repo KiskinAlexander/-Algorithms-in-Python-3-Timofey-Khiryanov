@@ -1,7 +1,4 @@
-# Задание по пути: http://judge.mipt.ru/mipt_cs_on_python3/labs/lab1.html
-# Нарисуйте смайлик:
-# http://judge.mipt.ru/mipt_cs_on_python3/images/lab1/smile.gif
-import turtle
+import turtle        
 t = turtle.Pen()     
 t.shape('turtle')    
 t.color('black')     
