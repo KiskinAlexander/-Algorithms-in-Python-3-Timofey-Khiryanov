@@ -1,6 +1,9 @@
 # Дано трехзначное число. Найдите сумму его цифр.
 # Пример: Ввод 179, Вывод 17
-A = int(input())
-Sum = 0
-Sum = A // 100 + int(A / 10) - A // 100 * 10 + A % 10
-print(Sum)
+def sum1(a):
+    sum_i = 0
+    for i in a:
+        sum_i+=int(i)
+    return sum_i
+A = input()
+print(sum1(A))
