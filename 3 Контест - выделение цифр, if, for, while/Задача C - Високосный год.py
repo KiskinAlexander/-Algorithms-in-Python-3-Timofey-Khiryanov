@@ -1,17 +1,11 @@
 # Требуется определить, является ли данный год високосным.
 # (Год является високосным, если его номер кратен 4, но не кратен 100, а также если он кратен 400).
 # Ввод: 1 Вывод NO
-N = int(input())
-T = 0
-if N % 400 == 0:
-    T = 1
-elif (N % 100 == 0) and not (N % 400 == 0):
-    T = 0
-else:
-    T = 1
-if not ((N % 4) == 0):
-    T = 0
-if T == 0:
-    print('NO')
-else:
-    print('YES')
+
+x=int(input())
+def leap_year(x):
+    if (x%4==0 and x%100!=0) or x%400==0:
+        return 'YES'
+    else:
+        return 'NO'
+print(leap_year(x))
