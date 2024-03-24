@@ -10,26 +10,12 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-T = 0
-for i in range(1, 8):
-    if x1 == x2 or y1 == y2:
-        T = 1
-        break
-    elif (x1 + i) == x2 and (y1 + i) == y2:
-        T = 1
-        break
-    elif (x1 - i) == x2 and (y1 - i) == y2:
-        T = 1
-        break
-    elif (x1 + i) == x2 and (y1 - i) == y2:
-        T = 1
-        break
-    elif (x1 - i) == x2 and (y1 + i) == y2:
-        T = 1
-        break
+
+def queen(x1,y1,x2,y2):
+    if x1==x2 or y1==y2:
+        return 'YES'
+    elif abs(x1-x2)==abs(y1-y2):
+        return 'YES'
     else:
-        T = 0
-if T == 1:
-    print('YES')
-else:
-    print('NO')
+        return 'NO'
+print(queen(x1,y1,x2,y2))
