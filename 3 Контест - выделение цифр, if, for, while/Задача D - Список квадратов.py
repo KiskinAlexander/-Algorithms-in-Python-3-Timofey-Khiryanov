@@ -2,12 +2,14 @@
 # в порядке возрастания.
 # На вход программе передается целое число N , не превышающее 10000.
 # Ввод: 50 Вывод 1 4 9 16 25 36 49
-N = int(input())
-i = 1
-
-while True:
-    if i**2 > N:
-        break
-    else:
-        print(i**2, end=' ')
-        i += 1
+def square(n):
+    i=1
+    while True:
+        if i**2 <= N:
+            print(i**2, end=' ')
+            i+=1
+        else:
+            break
+   
+N=int(input())
+square(N)
